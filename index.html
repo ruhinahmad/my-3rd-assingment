@@ -3,46 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/fruit2.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/b4b7d3a27b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Lato:wght@400;700;900&family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@400;700&family=Work+Sans:ital,wght@0,100;0,900;1,800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>my-3rd-assingment</title>
+    <style>
+      .font-family{
+        font-family: lato;
+      }
+    </style>
 </head>
-<body>
+<body class="font-family">
     <!-- Navbar Portion Start -->
 
     <nav class="w-full flex items-center justify-center">
-      <div class=" w-4/5 navbar bg-[#F85559]">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <label tabindex="0" class="btn btn-ghost btn-circle">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-            </label>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>Homepage</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>About</a></li>
-            </ul>
-          </div>
+      <div class="w-4/5 navbar bg-[#F85559] rounded-full mt-10">
+        <div class="navbar-start hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="text-sm text-white font-semibold bg-none hover:bg-none"><a>Home</a></li>
+            <li class="text-sm text-white font-semibold"><a>About Us</a></li>
+            <li class="text-sm text-white font-semibold"><a>Shop</a></li>
+            <li class="text-sm text-white font-semibold"><a>All Fruits</a></li>
+          </ul>
         </div>
         <div class="navbar-center">
-          <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+          <img class="w-9 h-9 mr-4" src="images/logo.png" alt="">
+          <p class="text-white font-semibold text-2xl">Fruit Burst</p>
         </div>
-        <div class="navbar-end">
-          <button class="btn btn-ghost btn-circle">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-          </button>
-          <button class="btn btn-ghost btn-circle">
-            <div class="indicator">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
-              <span class="badge badge-xs badge-primary indicator-item"></span>
-            </div>
-          </button>
+        <div class="navbar-end relative">
+          <input class=" w-56 rounded-full h-7 mr-6 pl-6" type="password" placeholder="Search here" name="psw" required><i class="fa-solid fa-magnifying-glass absolute mr-10"></i>
         </div>
       </div>
-  
     </nav>
-
     <!-- Navbar Portion End -->
+
+    <!-- Header Portion Start here -->
+
+      
+       
+
+    <!-- Header Portion End here -->
 </body>
 </html>
