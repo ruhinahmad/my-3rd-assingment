@@ -5,3 +5,15 @@ module.exports = {
     },
     plugins: [],
   }
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'font-family': '#da373d',
+           'code':'red',
+          }
+        }
+      }
+    }
+  </script>
