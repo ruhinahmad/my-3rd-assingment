@@ -1,18 +1,10 @@
-module.exports = {
-    content: ["./src/**/*.{html,js}"],
-    theme: {
-      extend: {},
-    },
-    plugins: [],
-  }
-  <script>
+<script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            'font-family' :  '#da373d',
-           'code':'red',
-           'banner-height' : '500px',
+            clifford: '#da373d',
+            'bgcustom': 'rgba(18, 18, 18, 0.70)',
           }
         }
       }
