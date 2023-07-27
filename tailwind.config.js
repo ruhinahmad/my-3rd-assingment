@@ -10,8 +10,9 @@ module.exports = {
       theme: {
         extend: {
           colors: {
-            'font-family': '#da373d',
+            'font-family' :  '#da373d',
            'code':'red',
+           'banner-height' : '500px',
           }
         }
       }

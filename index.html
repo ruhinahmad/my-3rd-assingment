@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://kit.fontawesome.com/b4b7d3a27b.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,9 +37,9 @@
     <!-- Navbar Portion End -->
 
     <!-- Header Portion Start here -->
-    <div class="w-full flex items-center justify-center mt-4">
+    <div class="w-full flex items-center justify-center mt-8">
       <div class="carousel w-4/5">
-        <div id="slide1" class="carousel-item relative w-full hero h-80 ">
+        <div id="slide1" class="carousel-item relative w-full hero">
           <div class="hero-content text-center">
             <div class="max-w-md">
               <h1 class="text-4xl font-bold text-white">Exotic tastes at your</h1>
@@ -48,16 +48,12 @@
               <button class="btn bg-[#F85559] font-bold border-none text-white hover:text-red-600 hover:bg-white">Shop Now</button>
             </div>
           </div>
-          <div class="w-full">
-            <img class="relative" src="/images/banner1.png" class="w-full" />
-          </div>
-          <div class="absolute bg-black w-full left-0 h-auto"></div>
+          <img src="/images/banner1.png" class="w-full" />
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide4" class="btn btn-circle">❮</a> 
             <a href="#slide2" class="btn btn-circle">❯</a>
           </div>
         </div>
-        <div class="absolute bg-black h-80 w-full left-0 "></div>
         <div id="slide2" class="carousel-item relative w-full hero max-h-full">
           <div class="hero-content text-center">
             <div class="max-w-md">
@@ -111,63 +107,155 @@
 
     <main class="container">
       <div class="w-full flex items-center justify-center py-28">
-        <div class="w-4/5 flex">
-          <div class="card w-64 bg-white  border-2 ">
-          <figure class="px-10 pt-10">
-            <img src="/images/fruit6.png" alt="fruit" class="rounded-xl" />
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title relative  mb-4">12.90$ - 18.85$</h2>
-            <span class="absolute w-4/5 h-px bg-slate-300 top-60 my-4"></span>
-            <p class="text-stone-600 mt-4">Apples</p>
-            <div class="card-actions list-none text-red-600">
-              <li><i class="fa-solid fa-star"></i></li>
-              <li><i class="fa-regular fa-star-half-stroke"></i></li>
-              <li><i class="fa-solid fa-star text-red-300"></i></li>
-              <li><i class="fa-solid fa-star text-red-300"></i></li>
-              <li><i class="fa-solid fa-star text-red-300"></i></li>
+        <div class="w-4/5">
+          <div class="flex items-center mb-12">
+            <div class="flex-1">
+              <h3 class="text-black font-bold text-4xl mb-7">Deal of the day</h3>
+              <p class="text-stone-600 text-sm">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
-            <div>
-            <button class="btn text-red-600 font-bold bg-white border-none focus-visible hover:bg-white" onclick="my_modal_1.showModal()">Details</button>
-            <dialog id="my_modal_1" class="modal">
-              <form method="dialog" class="modal-box">
-                <h3 class="font-bold text-lg">Hello!</h3>
-                <p class="py-4">Press ESC key or click the button below to close</p>
-                <div class="modal-action">
-                  <button class="btn">Close</button>
-                </div>
-              </form>
-            </dialog>
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max flex-1 justify-end">
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:15;"></span>
+                </span>
+                days
+              </div> 
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:10;"></span>
+                </span>
+                hours
+              </div> 
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:24;"></span>
+                </span>
+                min
+              </div> 
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:47;"></span>
+                </span>
+                sec
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card w-64 bg-white  border-2">
-          <figure class="px-10 pt-10">
-            <img src="/images/fruit6.png" alt="fruit" class="rounded-xl" />
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title relative  mb-4">12.90$ - 18.85$</h2>
-            <span class="absolute w-4/5 h-px bg-slate-300 top-60 my-4"></span>
-            <p class="text-stone-600 mt-4">Apples</p>
-            <div class="card-actions list-none text-red-600">
-              <li><i class="fa-solid fa-star"></i></li>
-              <li><i class="fa-regular fa-star-half-stroke"></i></li>
-              <li><i class="fa-solid fa-star text-red-300"></i></li>
-              <li><i class="fa-solid fa-star text-red-300"></i></li>
-              <li><i class="fa-solid fa-star text-red-300"></i></li>
-            </div>
-            <div>
-            <button class="btn text-red-600 font-bold bg-white border-none focus-visible hover:bg-white" onclick="my_modal_1.showModal()">Details</button>
-            <dialog id="my_modal_2" class="modal">
-              <form method="dialog" class="modal-box">
-                <h3 class="font-bold text-lg">Hello!</h3>
-                <p class="py-4">Press ESC key or click the button below to close</p>
-                <div class="modal-action">
-                  <button class="btn">Close</button>
+          <div class="flex">
+            <div class="card w-64 bg-white  border-2 mr-6">
+              <figure class="px-10 pt-10">
+                <img src="/images/fruit6.png" alt="fruit" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title relative  mb-4">12.90$ - 18.85$</h2>
+                <span class="absolute w-4/5 h-px bg-slate-300 top-60 my-4"></span>
+                <p class="text-stone-600 mt-4">Apples</p>
+                <div class="card-actions list-none text-red-600">
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                  <li><i class="fa-solid fa-star text-red-300"></i></li>
+                  <li><i class="fa-solid fa-star text-red-300"></i></li>
+                  <li><i class="fa-solid fa-star text-red-300"></i></li>
                 </div>
-              </form>
-            </dialog>
+                <div>
+                <button class="btn text-red-600 font-bold bg-white border-none focus-visible hover:bg-white" onclick="my_modal_1.showModal()">Details</button>
+                <dialog id="my_modal_1" class="modal">
+                  <form method="dialog" class="modal-box">
+                    <h3 class="font-bold text-lg">Hello!</h3>
+                    <p class="py-4">Press ESC key or click the button below to close</p>
+                    <div class="modal-action">
+                      <button class="btn">Close</button>
+                    </div>
+                  </form>
+                </dialog>
+                </div>
+              </div>
             </div>
+            <div class="card w-64 bg-white  border-2 mr-6">
+              <figure class="px-10 pt-10">
+                <img src="/images/fruit7.png" alt="fruit" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title relative  mb-4">12.90$ - 18.85$</h2>
+                <span class="absolute w-4/5 h-px bg-slate-300 top-60 my-4"></span>
+                <p class="text-stone-600 mt-4">Orange</p>
+                <div class="card-actions list-none text-red-600">
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                  <li><i class="fa-solid fa-star text-red-300"></i></li>
+                  <li><i class="fa-solid fa-star text-red-300"></i></li>
+                  <li><i class="fa-solid fa-star text-red-300"></i></li>
+                </div>
+                <div>
+                <button class="btn text-red-600 font-bold bg-white border-none focus-visible hover:bg-white" onclick="my_modal_1.showModal()">Details</button>
+                <dialog id="my_modal_2" class="modal">
+                  <form method="dialog" class="modal-box">
+                    <h3 class="font-bold text-lg">Hello!</h3>
+                    <p class="py-4">Press ESC key or click the button below to close</p>
+                    <div class="modal-action">
+                      <button class="btn">Close</button>
+                    </div>
+                  </form>
+                </dialog>
+                </div>
+              </div>
+          </div>
+            <div class="card w-64 bg-white  border-2 mr-6">
+              <figure class="px-10 pt-10">
+                <img src="/images/fruit8.png" alt="fruit" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title relative  mb-4">12.90$ - 18.85$</h2>
+                <span class="absolute w-4/5 h-px bg-slate-300 top-60 my-4"></span>
+                <p class="text-stone-600 mt-4">Red Dragon</p>
+                <div class="card-actions list-none text-red-600">
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                  <li><i class="fa-solid fa-star text-red-300"></i></li>
+                  <li><i class="fa-solid fa-star text-red-300"></i></li>
+                  <li><i class="fa-solid fa-star text-red-300"></i></li>
+                </div>
+                <div>
+                <button class="btn text-red-600 font-bold bg-white border-none focus-visible hover:bg-white" onclick="my_modal_1.showModal()">Details</button>
+                <dialog id="my_modal_3" class="modal">
+                  <form method="dialog" class="modal-box">
+                    <h3 class="font-bold text-lg">Hello!</h3>
+                    <p class="py-4">Press ESC key or click the button below to close</p>
+                    <div class="modal-action">
+                      <button class="btn">Close</button>
+                    </div>
+                  </form>
+                </dialog>
+                </div>
+              </div>
+            </div>
+            <div class="card w-64 bg-white  border-2">
+              <figure class="px-10 pt-10">
+                <img src="/images/fruit9.png" alt="fruit" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title relative  mb-4">12.90$ - 18.85$</h2>
+                <span class="absolute w-4/5 h-px bg-slate-300 top-60 my-4"></span>
+                <p class="text-stone-600 mt-4">Banana</p>
+                <div class="card-actions list-none text-red-600">
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                  <li><i class="fa-solid fa-star text-red-300"></i></li>
+                  <li><i class="fa-solid fa-star text-red-300"></i></li>
+                  <li><i class="fa-solid fa-star text-red-300"></i></li>
+                </div>
+                <div>
+                <button class="btn text-red-600 font-bold bg-white border-none focus-visible hover:bg-white" onclick="my_modal_1.showModal()">Details</button>
+                <dialog id="my_modal_4" class="modal">
+                  <form method="dialog" class="modal-box">
+                    <h3 class="font-bold text-lg">Hello!</h3>
+                    <p class="py-4">Press ESC key or click the button below to close</p>
+                    <div class="modal-action">
+                      <button class="btn">Close</button>
+                    </div>
+                  </form>
+                </dialog>
+                </div>
+              </div>
           </div>
         </div>
         </div>
